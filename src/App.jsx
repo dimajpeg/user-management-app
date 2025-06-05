@@ -1,30 +1,46 @@
 // src/App.jsx
-import React from 'react'; 
-import './styles/App.css'; 
+import React from 'react';
+import Header from './components/Header';
+import Footer from './components/Footer';
+import UserCard from './components/UserCard'; // Імпортуємо UserCard
+// import './styles/App.css';
 
 function App() {
+  // Створимо кілька об'єктів з даними користувачів для прикладу
+  const usersData = [
+    { id: 1, name: "Іван Петренко", email: "ivan@example.com", age: 30 },
+    { id: 2, name: "Марія Сидоренко", email: "maria@example.com", age: 25 },
+    { id: 3, name: "Олег Ковальчук", email: "oleh@example.com", age: 42 }
+  ];
+
   return (
-    <div className="app-container"> {/* Головний контейнер додатку */}
-      <header className="app-header">
-        <h1>Система Обліку Користувачів</h1>
-        <nav className="app-nav">
-          <ul>
-            {/* Поки що це будуть просто заглушки. Пізніше ми сюди додамо React Router для навігації */}
-            <li><a href="#">Головна</a></li>
-            <li><a href="#">Список користувачів</a></li>
-            <li><a href="#">Додати користувача</a></li>
-          </ul>
-        </nav>
-      </header>
+    <div className="app-container">
+      <Header />
 
       <main className="app-main-content">
-        {/* Тут буде відображатися вміст сторінок залежно від обраного пункту меню */}
-        <p>Основний вміст сторінки буде тут.</p>
+        <h2>Список користувачів (приклад з UserCard)</h2>
+        <div className="user-list-container"> {/* Контейнер для карток */}
+          {/* Відображаємо кілька UserCard з різними даними */}
+          {/* 
+            // Варіант 1: Вручну передаємо дані для кожної картки
+            <UserCard name="Іван Петренко" email="ivan@example.com" age={30} />
+            <UserCard name="Марія Сидоренко" email="maria@example.com" age={25} />
+            <UserCard name="Олег Ковальчук" email="oleh@example.com" age={42} /> 
+          */}
+
+          {/* Варіант 2: Рендеримо картки з масиву даних usersData */}
+          {usersData.map(user => (
+            <UserCard
+              key={user.id} // Ключ важливий при рендерингу списків!
+              name={user.name}
+              email={user.email}
+              age={user.age}
+            />
+          ))}
+        </div>
       </main>
 
-      <footer className="app-footer">
-        <p>© {new Date().getFullYear()} User Management App</p>
-      </footer>
+      <Footer />
     </div>
   );
 }

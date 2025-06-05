@@ -4,8 +4,9 @@ import Header from './components/Header';
 import Footer from './components/Footer';
 import UserCard from './components/UserCard';
 import Counter from './components/Counter';
-import Timer from './components/Timer'; // Імпортуємо Timer
-// import './styles/App.css';
+import Timer from './components/Timer';
+import ButtonClick from './components/ButtonClick'; // Імпортуємо ButtonClick
+ import './styles/App.css';
 
 function App() {
   const usersData = [
@@ -32,12 +33,12 @@ function App() {
         </div>
 
         <hr style={{ margin: '20px 0' }} />
-
         <Counter />
-
+        <hr style={{ margin: '20px 0' }} />
+        <Timer />
         <hr style={{ margin: '20px 0' }} /> {/* Ще один роздільник */}
 
-        <Timer /> {/* Додаємо компонент таймера */}
+        <ButtonClick /> {/* Додаємо компонент для демонстрації обробки подій */}
 
       </main>
 

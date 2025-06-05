@@ -27,3 +27,56 @@
   color: #555;
   margin-bottom: 5px;
 }
+
+.counter-container {
+  margin-top: 20px;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  text-align: center;
+  background-color: #f0f0f0;
+}
+
+.counter-container h2 {
+  margin-top: 0;
+}
+
+.count-display {
+  font-size: 2em;
+  margin: 10px 0;
+  font-weight: bold;
+}
+
+.buttons-container button {
+  padding: 10px 20px;
+  margin: 5px;
+  font-size: 1em;
+  cursor: pointer;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.buttons-container button:hover {
+  background-color: #e7e7e7;
+}
+.timer-container {
+  margin-top: 20px;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  text-align: center;
+  background-color: #e9f5ff; /* Світло-блакитний фон */
+}
+
+.timer-container h2 {
+  margin-top: 0;
+  color: #0056b3; /* Темно-синій */
+}
+
+.time-display {
+  font-size: 2.5em; /* Більший шрифт для часу */
+  margin: 10px 0;
+  font-weight: bold;
+  font-family: 'Courier New', Courier, monospace; /* Моноширинний шрифт для часу */
+  color: #003366; /* Ще темніший синій */
+}

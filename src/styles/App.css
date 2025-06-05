@@ -193,3 +193,58 @@
 .todo-list-item:last-child {
   border-bottom: none; /* Прибираємо лінію для останнього елемента */
 }
+.profile-container {
+  margin-top: 20px;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #fdf5e6; /* Кремовий фон */
+}
+
+.profile-container h2 {
+  margin-top: 0;
+  text-align: center;
+  color: #8b4513; /* Коричневий */
+}
+
+.profile-container button {
+  display: block;
+  margin: 0 auto 15px auto; /* Центрування кнопки */
+  padding: 10px 15px;
+  background-color: #deb887; /* Світло-коричневий */
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.profile-container button:hover {
+  background-color: #cd853f; /* Перу */
+}
+
+.profile-info {
+  margin-top: 15px;
+  padding: 15px;
+  background-color: #fffaf0; /* Ще світліший кремовий */
+  border-radius: 4px;
+  text-align: center; /* Центруємо вміст профілю */
+}
+
+.profile-avatar {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%; /* Робимо аватар круглим */
+  margin-bottom: 10px;
+  border: 2px solid #deb887;
+}
+
+.profile-info h3 {
+  margin-top: 0;
+  color: #a0522d; /* Сієнна */
+}
+
+.profile-info p {
+  font-size: 0.95em;
+  color: #704214; /* Темно-коричневий */
+  line-height: 1.5;
+}

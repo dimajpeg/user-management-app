@@ -9,10 +9,11 @@ import Counter from './components/Counter';
 import Timer from './components/Timer';
 import ButtonClick from './components/ButtonClick';
 import SimpleForm from './components/SimpleForm';
-import ToDoList from './components/ToDoList'; // Це ToDoList з пункту 9
+import ToDoList from './components/ToDoList'; // ToDoList з пункту 9
+import Profile from './components/Profile';   // Profile з пункту 10
 
 // Якщо ти створив src/styles/App.css і хочеш його використовувати:
-// import './styles/App.css'; 
+import './styles/App.css'; 
 // Або якщо ти закоментував цей рядок раніше через помилку,
 // переконайся, що файл src/styles/App.css існує, або залиш закоментованим.
 
@@ -56,6 +57,9 @@ function App() {
 
         <hr style={{ margin: '20px 0' }} />
         <ToDoList /> {/* Компонент з пункту 9 (Рендеринг списків) */}
+
+        <hr style={{ margin: '20px 0' }} />
+        <Profile /> {/* Компонент з пункту 10 (Умовний рендеринг) */}
       </main>
 
       <Footer /> {/* Компонент з пункту 3 */}

@@ -165,3 +165,31 @@
   margin-top: 0;
   font-size: 1.1em;
 }
+.todo-list-container {
+  margin-top: 20px;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #e6ffe6; /* Світло-зелений фон */
+}
+
+.todo-list-container h2 {
+  margin-top: 0;
+  text-align: center;
+  color: #006400; /* Темно-зелений */
+}
+
+.todo-list-container ul {
+  list-style-type: decimal; /* Нумерований список */
+  padding-left: 20px; /* Відступ для нумерації */
+}
+
+.todo-list-item {
+  padding: 8px 0;
+  border-bottom: 1px dashed #b3ffb3; /* Пунктирна лінія між елементами */
+  color: #228B22; /* Зелений */
+}
+
+.todo-list-item:last-child {
+  border-bottom: none; /* Прибираємо лінію для останнього елемента */
+}

@@ -115,3 +115,53 @@
 .button-click-container button:hover {
   background-color: #e0a800; /* Темніший жовтий */
 }
+.simple-form-container {
+  margin-top: 20px;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #f5f5f5;
+}
+
+.simple-form-container h2 {
+  margin-top: 0;
+  text-align: center;
+}
+
+.simple-form-container form {
+  display: flex;
+  gap: 10px; /* Відстань між інпутом і кнопкою */
+  margin-bottom: 15px;
+}
+
+.simple-form-container input[type="text"] {
+  flex-grow: 1; /* Інпут займає доступний простір */
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.simple-form-container button[type="submit"] {
+  padding: 10px 15px;
+  background-color: #5cb85c; /* Зелений */
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.simple-form-container button[type="submit"]:hover {
+  background-color: #4cae4c; /* Темніший зелений */
+}
+
+.displayed-text-container {
+  margin-top: 15px;
+  padding: 10px;
+  background-color: #e7e7e7;
+  border-radius: 4px;
+}
+
+.displayed-text-container h3 {
+  margin-top: 0;
+  font-size: 1.1em;
+}

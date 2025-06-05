@@ -9,13 +9,11 @@ import Counter from './components/Counter';
 import Timer from './components/Timer';
 import ButtonClick from './components/ButtonClick';
 import SimpleForm from './components/SimpleForm';
-import ToDoList from './components/ToDoList'; // ToDoList з пункту 9
-import Profile from './components/Profile';   // Profile з пункту 10
+import ToDoList from './components/ToDoList';
+import Profile from './components/Profile';
+import QuoteGenerator from './components/QuoteGenerator'; // Додано імпорт QuoteGenerator
 
-// Якщо ти створив src/styles/App.css і хочеш його використовувати:
-import './styles/App.css'; 
-// Або якщо ти закоментував цей рядок раніше через помилку,
-// переконайся, що файл src/styles/App.css існує, або залиш закоментованим.
+// import './styles/App.css'; // Якщо є специфічні стилі для App
 
 function App() {
   // Дані для UserCard (з пункту 4)
@@ -27,10 +25,9 @@ function App() {
 
   return (
     <div className="app-container">
-      <Header /> {/* Компонент з пункту 3 */}
+      <Header />
 
       <main className="app-main-content">
-        {/* Компонент UserCard та дані з пункту 4 */}
         <h2>Список користувачів (приклад з UserCard)</h2>
         <div className="user-list-container">
           {usersData.map(user => (
@@ -44,25 +41,28 @@ function App() {
         </div>
 
         <hr style={{ margin: '20px 0' }} />
-        <Counter /> {/* Компонент з пункту 5 (useState) */}
+        <Counter />
 
         <hr style={{ margin: '20px 0' }} />
-        <Timer /> {/* Компонент з пункту 6 (useEffect) */}
+        <Timer />
 
         <hr style={{ margin: '20px 0' }} />
-        <ButtonClick /> {/* Компонент з пункту 7 (Обробка подій) */}
+        <ButtonClick />
 
         <hr style={{ margin: '20px 0' }} />
-        <SimpleForm /> {/* Компонент з пункту 8 (Форми) */}
+        <SimpleForm />
 
         <hr style={{ margin: '20px 0' }} />
-        <ToDoList /> {/* Компонент з пункту 9 (Рендеринг списків) */}
+        <ToDoList />
 
         <hr style={{ margin: '20px 0' }} />
-        <Profile /> {/* Компонент з пункту 10 (Умовний рендеринг) */}
+        <Profile />
+
+        <hr style={{ margin: '20px 0' }} />
+        <QuoteGenerator /> {/* Додано компонент QuoteGenerator */}
       </main>
 
-      <Footer /> {/* Компонент з пункту 3 */}
+      <Footer />
     </div>
   );
 }
